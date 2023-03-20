@@ -13,3 +13,5 @@ class Receptionist {
     String recepPassword
     int recepPhone
 }
+
+// Many receptionists to 1 (belongsto) surgery

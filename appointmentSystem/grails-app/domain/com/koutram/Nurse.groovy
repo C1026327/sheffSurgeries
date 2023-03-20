@@ -13,3 +13,6 @@ class Nurse {
     String nurseOffice
     int nursePhone
 }
+
+// Nurse Many to Many Doctors
+// Nurse Many to One (BelongsTo) Surgery

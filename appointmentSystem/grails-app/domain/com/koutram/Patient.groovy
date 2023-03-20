@@ -15,3 +15,8 @@ class Patient {
     Date dateRegistered
     int patientPhone
 }
+
+// Patient 1 to 0 or many Prescriptions
+// Patient Many to Many Doctors
+// Patient Many to Many Surgeries
+// Patient One to One Appointment

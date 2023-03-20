@@ -17,3 +17,7 @@ class Doctor {
     String bio
 
 }
+
+// Doctor 1 to Many Prescriptions
+// Doctor Many to Many Nurses
+// Doctors Many to 1 (belongsto) Surgery

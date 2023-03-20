@@ -14,3 +14,6 @@ class Appointment {
     String rooNumber
 
 }
+
+// 1 Appointment? to Many Surgeries
+// 1 Appointment to 1 patient

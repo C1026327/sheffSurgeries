@@ -15,3 +15,9 @@ class Surgery {
     Date openingTime
     Boolean registeringNewPatients
 }
+
+// Surgery belongsto Many Nurses
+// Surgery belongsto many receptionists
+// Surgery belongsto many doctors
+// Surgery many to 1? appointment
+// Surgery many to many patients.

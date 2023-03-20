@@ -15,3 +15,6 @@ class Prescription {
     Date dateIssued
     Boolean patientPaying
 }
+
+// Many prescriptions to one doctor
+// 0 or More prescriptions to one patient
