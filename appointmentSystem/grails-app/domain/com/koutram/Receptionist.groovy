@@ -12,6 +12,10 @@ class Receptionist {
     String recepusername
     String recepPassword
     int recepPhone
-}
 
+    String toString(){
+        recepName
+    }
+}
+static belongsTo = [surgery:Surgery]
 // Many receptionists to 1 (belongsto) surgery

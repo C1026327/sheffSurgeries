@@ -14,7 +14,14 @@ class Surgery {
     int numberOfPatients
     Date openingTime
     Boolean registeringNewPatients
+
+    String toString(){
+        name
+    }
 }
+
+static hasMany = [doctors:Doctor, receptionists:Receptionist, nurses:Nurse, patients:Patient]
+
 
 // Surgery belongsto Many Nurses
 // Surgery belongsto many receptionists

@@ -12,8 +12,10 @@ class Appointment {
     Date appTime
     Date appDuration
     String rooNumber
+    Patient patient
 
 }
 
+static hasMany = [surgeries:Surgery]
 // 1 Appointment? to Many Surgeries
 // 1 Appointment to 1 patient

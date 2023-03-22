@@ -13,7 +13,12 @@ class Prescription {
     Date daysSupply
     BigDecimal totalCost
     Date dateIssued
-    Boolean patientPaying
+    Patient patientPaying
+    Doctor prescribedBy
+
+    String toString(){
+        return (patient ? patient.toString() + " " + medicine)
+    }
 }
 
 // Many prescriptions to one doctor

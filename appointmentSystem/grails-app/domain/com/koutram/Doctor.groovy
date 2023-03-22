@@ -16,8 +16,13 @@ class Doctor {
     int doctorPhone
     String bio
 
-}
+    String toString(){
+        return(doctorName)
+    }
 
+}
+static hasMany = [prescriptions:Prescription, nurses:Nurse]
+static belongsTo = [surgery:Surgery]
 // Doctor 1 to Many Prescriptions
 // Doctor Many to Many Nurses
 // Doctors Many to 1 (belongsto) Surgery

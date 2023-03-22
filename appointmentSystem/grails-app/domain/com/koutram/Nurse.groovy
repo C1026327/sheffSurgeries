@@ -12,7 +12,13 @@ class Nurse {
     String nurseEmail
     String nurseOffice
     int nursePhone
+
+    String toString(){
+        return(nurseName)
+    }
 }
 
+static BelongsTo = [surgery:Surgery]
+static hasMany = [doctors:Doctor]
 // Nurse Many to Many Doctors
 // Nurse Many to One (BelongsTo) Surgery
