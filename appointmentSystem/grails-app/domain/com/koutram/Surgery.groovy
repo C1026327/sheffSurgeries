@@ -18,6 +18,7 @@ class Surgery {
     String toString(){
         name
     }
-}
 
-static hasMany = [doctors:Doctor, receptionists:Receptionist, nurses:Nurse, patients:Patient]
+    static hasMany = [doctors:Doctor, receptionists:Receptionist, nurses:Nurse, patients:Patient]
+
+}

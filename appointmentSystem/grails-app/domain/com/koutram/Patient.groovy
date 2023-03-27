@@ -19,7 +19,9 @@ class Patient {
     String toString(){
         return(patientName)
     }
+
+    static hasMany = [doctors:Doctor, prescriptions:Prescription, surgeries:Surgery]
+    static belongsTo [Appointment]
+
 }
 
-static hasMany = [doctors:Doctor, prescriptions:Prescription, surgeries:Surgery]
-static belongsTo [Appointment]

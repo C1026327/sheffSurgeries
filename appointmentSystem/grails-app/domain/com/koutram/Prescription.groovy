@@ -18,6 +18,8 @@ class Prescription {
     String toString(){
         return (patient ? patient.toString() + " " + medicine)
     }
+
+    static belongsTo = [doctor:Doctor, patient:Patient]
+
 }
 
-static belongsTo = [doctor:Doctor, patient:Patient]
