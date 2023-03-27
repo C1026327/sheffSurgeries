@@ -17,5 +17,5 @@ class Receptionist {
         recepName
     }
 }
-static belongsTo = [surgery:Surgery]
-// Many receptionists to 1 (belongsto) surgery
+
+static belongsTo = [Surgery]

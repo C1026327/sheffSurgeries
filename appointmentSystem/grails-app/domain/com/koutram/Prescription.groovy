@@ -5,6 +5,7 @@ class Prescription {
     static constraints = {
         //Constraints can be defined to limit what kind of input is 
         //submitted towards this class, which is more important for verification.
+        patient nullable:true
     }
 
     String pharmacyName
@@ -13,13 +14,10 @@ class Prescription {
     Date daysSupply
     BigDecimal totalCost
     Date dateIssued
-    Patient patientPaying
-    Doctor prescribedBy
 
     String toString(){
         return (patient ? patient.toString() + " " + medicine)
     }
 }
 
-// Many prescriptions to one doctor
-// 0 or More prescriptions to one patient
+static belongsTo = [doctor:Doctor, patient:Patient]

@@ -21,9 +21,5 @@ class Patient {
     }
 }
 
-static hasMany = [doctors:Doctor, surgeries:Surgery, prescriptions:Prescription]
-
-// Patient 1 to 0 or many Prescriptions
-// Patient Many to Many Doctors
-// Patient Many to Many Surgeries
-// Patient One to One Appointment
+static hasMany = [doctors:Doctor, prescriptions:Prescription, surgeries:Surgery]
+static belongsTo [Appointment]

@@ -18,7 +18,5 @@ class Nurse {
     }
 }
 
-static BelongsTo = [surgery:Surgery]
 static hasMany = [doctors:Doctor]
-// Nurse Many to Many Doctors
-// Nurse Many to One (BelongsTo) Surgery
+static belongsTo = [Surgery]

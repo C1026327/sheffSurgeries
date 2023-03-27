@@ -21,10 +21,3 @@ class Surgery {
 }
 
 static hasMany = [doctors:Doctor, receptionists:Receptionist, nurses:Nurse, patients:Patient]
-
-
-// Surgery belongsto Many Nurses
-// Surgery belongsto many receptionists
-// Surgery belongsto many doctors
-// Surgery many to 1? appointment
-// Surgery many to many patients.

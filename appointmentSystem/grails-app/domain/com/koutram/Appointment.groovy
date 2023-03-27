@@ -11,11 +11,8 @@ class Appointment {
     Date appDay
     Date appTime
     Date appDuration
-    String rooNumber
-    Patient patient
+    String roomNumber
 
 }
 
-static hasMany = [surgeries:Surgery]
-// 1 Appointment? to Many Surgeries
-// 1 Appointment to 1 patient
+static belongsTo = [Doctor, Patient]
