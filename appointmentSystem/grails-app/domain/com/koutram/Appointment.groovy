@@ -13,6 +13,6 @@ class Appointment {
     Date appDuration
     String roomNumber
 
-}
+    static belongsTo = [Doctor, Patient]
 
-static belongsTo = [Doctor, Patient]
+}
