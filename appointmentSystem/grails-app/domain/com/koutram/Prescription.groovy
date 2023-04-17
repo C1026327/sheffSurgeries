@@ -16,7 +16,7 @@ class Prescription {
     Date dateIssued
 
     String toString(){
-        return (medicine + " " + patient? patientName())
+        return (medicine)
     }
 
     static belongsTo = [doctor:Doctor, patient:Patient]

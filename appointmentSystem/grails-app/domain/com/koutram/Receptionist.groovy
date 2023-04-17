@@ -11,12 +11,12 @@ class Receptionist {
     String recepEmail
     String recepusername
     String recepPassword
-    int recepPhone
+    String recepPhone
 
     String toString(){
         recepName
     }
 
-    static belongsTo = [Surgery]
+    static belongsTo = [surgery:Surgery]
 
 }

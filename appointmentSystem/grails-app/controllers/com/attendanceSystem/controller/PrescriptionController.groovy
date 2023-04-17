@@ -2,5 +2,5 @@ package com.attendanceSystem.controller
 
 class PrescriptionController {
 
-    def scaffold = Prescription
+    def scaffold = com.koutram.Prescription
 }

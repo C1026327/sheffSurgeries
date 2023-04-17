@@ -10,8 +10,8 @@ class Surgery {
     String name
     String address
     String postcode
-    int telephone
-    int numberOfPatients
+    String telephone
+    Integer numberOfPatients = 0
     Date openingTime
     Boolean registeringNewPatients
 
@@ -20,5 +20,14 @@ class Surgery {
     }
 
     static hasMany = [doctors:Doctor, receptionists:Receptionist, nurses:Nurse, patients:Patient]
+    
+    Integer getPatientCount() {
+        patients?.size () ?: 0
+    }
+
+    void beforeUpdate() {
+        numberOfPatients = getPatientCount()
+    }
+    
 
 }

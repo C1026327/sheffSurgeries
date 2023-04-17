@@ -5,6 +5,10 @@ class Doctor {
     static constraints = {
         //Constraints can be defined to limit what kind of input is 
         //submitted towards this class, which is more important for verification.
+        doctorEmail (email:true)
+        //doctorPhone (matches:"[1-0]")
+        password (password:true)
+        //doctorPhone(phoneNumber:true)
     }
 
     String doctorName
@@ -13,7 +17,7 @@ class Doctor {
     String doctorEmail
     String password
     String doctorOffice
-    int doctorPhone
+    String doctorPhone
     String bio
 
     String toString(){
@@ -21,7 +25,7 @@ class Doctor {
     }
 
     static hasMany = [appointments:Appointment,prescriptions:Prescription, nurses:Nurse, patients:Patient]
-    static belongsTo = [Surgery]
+    static belongsTo = [surgery:Surgery]
 
 
 }

@@ -2,5 +2,5 @@ package com.attendanceSystem.controller
 
 class NurseController {
 
-    def scaffold = Nurse
+    def scaffold = com.koutram.Nurse
 }
