@@ -8,11 +8,10 @@ class Appointment {
     
     }
 
-    Date appDay
-    Date appTime
+    Date appDateTime
     Date appDuration
     String roomNumber
 
-    static belongsTo = [doctor:Doctor, doctor:Patient]
+    static hasOne = [doctor:Doctor, patient:Patient, surgery: Surgery]
 
 }

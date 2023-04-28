@@ -16,7 +16,6 @@ class Receptionist {
     String toString(){
         recepName
     }
-
-    static belongsTo = [surgery:Surgery]
+    static hasOne = [surgery: Surgery]
 
 }
