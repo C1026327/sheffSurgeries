@@ -11,7 +11,9 @@ class Surgery {
     String address
     String postcode
     String telephone
-    Integer numberOfPatients = 0
+    Integer numberOfPatients(){
+    patients?.size() ?:0
+    }
     String openingTime
     Boolean registeringNewPatients
 
@@ -20,6 +22,8 @@ class Surgery {
     }
 
     static hasMany = [doctors:Doctor, receptionists:Receptionist, nurses:Nurse, patients:Patient, appointments: Appointment]
+    
+    static belongsTo = Patient
     
     Integer getPatientCount() {
         patients?.size () ?: 0
