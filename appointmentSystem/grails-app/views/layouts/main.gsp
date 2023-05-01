@@ -28,6 +28,9 @@
                 <g:pageProperty name="page.nav"/>
             </ul>
         </div>
+        <div class="collapse navbar-collapse" aria-expanded="false" style="height: 0.8px;" id="navbarContent">
+            <g:loginToggle />
+        </div>
     </div>
 </nav>
 

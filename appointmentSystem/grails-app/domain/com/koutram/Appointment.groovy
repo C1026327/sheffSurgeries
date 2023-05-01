@@ -8,8 +8,12 @@ class Appointment {
     
     }
 
+    String toString(){
+        roomNumber + ' ' + appDateTime
+    }
+
     Date appDateTime
-    Date appDuration
+    int appDuration
     String roomNumber
 
     static hasOne = [doctor:Doctor, patient:Patient, surgery: Surgery]

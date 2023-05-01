@@ -12,7 +12,7 @@ class Prescription {
     String pharmacyName
     int prescriptionNumber
     String medicine
-    Date daysSupply
+    int daysSupply
     BigDecimal totalCost
     Date dateIssued
     boolean patientPaying

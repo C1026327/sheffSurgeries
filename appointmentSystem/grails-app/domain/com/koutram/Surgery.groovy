@@ -11,9 +11,7 @@ class Surgery {
     String address
     String postcode
     String telephone
-    Integer numberOfPatients(){
-    patients?.size() ?:0
-    }
+    Integer numberOfPatients
     String openingTime
     Boolean registeringNewPatients
 
@@ -21,7 +19,7 @@ class Surgery {
         name
     }
 
-    static hasMany = [doctors:Doctor, receptionists:Receptionist, nurses:Nurse, patients:Patient, appointments: Appointment]
+    static hasMany = [workers:Worker, patients:Patient, appointments: Appointment]
     
     static belongsTo = Patient
     

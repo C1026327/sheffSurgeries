@@ -1,6 +1,6 @@
 package com.koutram
 
-class Patient {
+class Patient extends Person {
 
     static constraints = {
         //Constraints can be defined to limit what kind of input is 
@@ -8,16 +8,14 @@ class Patient {
         prescriptions(nullable: true)
     }
 
-    String patientName
     String patientAddress
     String patientResidence
     Date patientDob
-    int patientID
+    String patientID
     Date dateRegistered
-    int patientPhone
-
+    
     String toString(){
-        return(patientName)
+        return(name)
     }
 
     static hasMany = [surgeries:Surgery, appointments:Appointment, prescriptions:Prescription]
