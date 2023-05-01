@@ -36,6 +36,7 @@
 
 <g:layoutBody/>
 
+
 <div class="footer" role="contentinfo">
     <div class="container-fluid">
         <div class="row">

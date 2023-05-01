@@ -9,6 +9,7 @@
      <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
         </g:if>
+        <h1>Receptionist Login</h1>
         <g:form action="validate">
             <input type="hidden" name="cName" value="${cName}">
             <input type="hidden" name="aName" value="${aName}">

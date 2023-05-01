@@ -120,9 +120,9 @@ environments:
             dbCreate: update
             url: jdbc:mysql://localhost:3306/sheffSurgeriesALT
     production:
-        dataSource:
+        dataSource: 
             dbCreate: 
-            url: jdbc:mysql://localhost:3306/sheffSurgeriesALTPub
+            url: jdbc:mysql://localhost:3306/sheffSurgeriesALTpub
             properties:
                 jmxEnabled: true
                 initialSize: 5
